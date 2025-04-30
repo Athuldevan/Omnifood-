@@ -1,0 +1,238 @@
+/*
+
+---01-TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Font-weight
+Default: 400, 5000, 600, 700
+
+-Line-Height
+Default - 1
+
+-lette
+
+- SPACING SYSTEM(px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 /  
+
+--- 02 COLORS
+-Primairy: #e67e22
+-tints: fae5d3, #fadf2e9
+-Shadows: #fdf2e9;
+-Accents:
+-Greys: 
+#555;
+#333;
+#6f6f6f
+
+---05 SHADOWS
+
+---06 BORDER-RADIUS
+default -9px
+
+---07 WHITE SPACE
+
+- SPACING SYSTEM(px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+/* *********************************************************************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/* ****************************** */
+/* GENERAL  RESUSABLE COMPONENTS */
+/* ****************************** */
+
+/* reusable grid and container  */
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem; /*THIS IS ROW GAP WE CAN SET THE COLOUMN GAP ALSO */
+  column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+/* reusable grid end  */
+
+.primary-heading,
+.secondary-heading {
+  line-height: -1px;
+  font-weight: 700;
+  color: #333;
+}
+
+.primary-heading {
+  font-size: 5.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.secondary-heading {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.tertiary-heaading {
+  font-size: 3.6rem;
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+
+.sub-heading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.85px;
+}
+
+.btn:link,
+.btn:visited {
+  /* background-color: #e67e22; */
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 9px;
+  cursor: pointer;
+  
+  /* put tranasition on original sate */
+  /* transition: background-color 0.3s ease-in; */
+  transition: all 0.3s ease-in;
+}
+
+.btn--full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+  clear: #fff;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  /*  trick to add border inside the button  */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.link:link,
+.link:visited {
+  color: #e67e22 ;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  display: inline-block;
+  padding-bottom: 2px;
+
+  /* animate in the orginal state  */
+  transition: all 0.3s ease;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+
+}
+
+/* Helper class  */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+
+.margin-right-md {
+  margin-bottom: 4.8rem !important;
+}
+/* ****************************** */
+/*  HEADER SECTION*/
+/* ****************************** */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  height: 9.6rem;
+  padding: 0 48px;
+}
+.logo {
+  height: 2.2rem;
+}
+
+
+.lists {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1.6rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 2rem;
+  font-size: 1.8rem;
+}
