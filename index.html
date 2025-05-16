@@ -9,13 +9,15 @@
   </head>
   <body>
     <header class="header">
-      <img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
+      <a href = "#">
+        <img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
+      </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Section1</a></li>
-          <li><a class="main-nav-link" href="#">Section2</a></li>
-          <li><a class="main-nav-link" href="#">Section3</a></li>
-          <li><a class="main-nav-link" href="#">Section4</a></li>
+          <li><a class="main-nav-link" href="#">How it works</a></li>
+          <li><a class="main-nav-link" href="#">Meal  s</a></li>
+          <li><a class="main-nav-link" href="#">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#">Try for free </a></li>
           <li><a class="main-nav-link nav-cta" href="#">Section5</a></li>
         </ul>
       </nav>
@@ -373,7 +375,7 @@
       </div>
 
       <!-- GALLERY  -->
-      <div class="gallery">
+      <div class="gallery ">
         <figure class="gallery-item">
           <img src="img/gallery/gallery-1.jpg" alt="photo of beautiful food" />
         </figure>
@@ -428,18 +430,233 @@
 
       <!-- prcing table  -->
       <div class="container grid grid--2-cols">
-        <div class="pricing-plan">
+        <!-- STARTER PRICING PLAN  -->
+        <div class="pricing-plan pricing-plan--starter">
+          <header class="plan-header">
           <p class="plan-name">Starter</p>
           <p class="plan-prcie"><span>$</span>399</p>
           <p class="plan-text">per month, That's just 32$ per meal!</p>
+        </header>
+        <ul class="lists">
+          <li class="list-item">
+            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+            <span>1 meal per day</span>
+          </li>
+          <li class="list-item">
+            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+            <span>Order times are between 11am and 9pm</span>
+          </li>
+          <li class="list-item">
+            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+            <span>Delivery is free</span>
+          </li>
+          <li class="list-item">
+            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+            <span>❌</span>
+          </li>
+        </ul>
 
-          Prices include all applicable taxes. Users can cancel at any time.
-          Starter: $399 per month - 1 meal per day - Order times are between
-          11am and 9pm - Delivery is free
+            <li class="list-item">
+              <a href="#" class="btn btn--full plan-signup ">
+                Start eating well
+              </a>
+            </li>
+         
         </div>
-        <div class="pricing-plan">pricing 2</div>
+        <!-- COMPLETE PRICING PLAN-->
+        <div class="pricing-plan pricing-plan--complete">
+          <header class="plan-header">
+          <p class="plan-name">Complete</p>
+          <p class="plan-prcie"><span>$</span>649</p>
+          <p class="plan-text">per month, That's just $13 per meal!</p>
+        </header> 
+          <ul class="lists">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline">✔️</ion-icon>
+
+              <span><strong>2 meals</strong> per day </span>
+            </li>
+          <ul class="lists">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline">✔️</ion-icon>
+
+              <span> Order <strong>24 / 7</strong></span>
+            </li>
+          <ul class="lists">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline">✔️</ion-icon>
+
+              <span>Delivery is</span>
+            </li>
+            </ul>
+          <ul class="lists">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline">✔️</ion-icon>
+
+              <span>Get access to latest recipies</span>
+            </li>
+            </ul>
+            
+            <div class="list-item grid">
+              <a href="#" class="btn btn--full plan-signup">
+                Start eating well
+              </a>
+            </div>
+            
+          </div>
+        </div>
+
+          <div class="container plan-details">
+            <aside class="plan-details">
+              price include all taxes.You cancel at any time .Both plans include the following 
+            </aside>
+          </div>
+
+        <!-- Fearures section  -->
+        <div class="container grid grid--4-cols">
+          <!-- 1st feature  -->
+          <div class="feature">
+            <span class="feature-icon">♾️</span>
+            <p class="feature-title">Never Cook agian </p>
+            <p class="feature-content">Our subscriptions cover 365 days per year, even including major holidays.</p>
+          </div>
+          <!-- 2nd feature  -->
+          <div class="feature">
+            <span class="feature-icon">♾️</span>
+            <p class="feature-title">Never Cook agian </p>
+            <p class="feature-content">Our subscriptions cover 365 days per year, even including major holidays.</p>
+          </div>
+          <!-- 3rd feature -->
+          <div class="feature">
+            <span class="feature-icon">♾️</span>
+            <p class="feature-title">Never Cook agian </p>
+            <p class="feature-content">Our subscriptions cover 365 days per year, even including major holidays.</p>
+          </div>
+          <!-- 4th feature  -->
+          <div class="feature">
+            <span class="feature-icon">♾️</span>
+            <p class="feature-title">Never Cook agian </p>
+            <p class="feature-content">Our subscriptions cover 365 days per year, even including major holidays.</p>
+          </div>
+          
+        </div>
       </div>
     </section>
-  </body>
-  <script src="https://unpkg.com/ionicons@5.5.1dist/ionicons.js"></script>
+
+    <!-- CALL TO ACTION SECTION -->
+     <section class="cta-section">
+      <div class="container  ">
+        <div class="cta">
+          <!-- Cta text box  -->
+          <div class="cta-text-box">
+            <h2 class="secondary-heading">Get your first meal for free!</h2>
+            <!-- <p class="cta-text">
+              Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
+            </p> -->
+
+            <form class="cta-form" action="">
+              <!-- text field  -->
+              <div>
+                <label for="full-name">Full Name</label>
+                <input 
+                type="text"
+                placeholder="John smith "  
+                id="full-name" required/>
+              </div>
+                
+              <!-- EMail fiels -->
+              <div>
+                <label for = "full-name">Email adress</label>
+                  <input type="email" 
+                  placeholder="me@gmial.com" 
+                  id="email" required >
+                </div>
+
+                <!-- Select -option tag  -->
+                <div>
+                  <label for="select-where">Where did you hear </label>
+                  <select id ="select-where" required>
+                    <option value="">Please choose one </option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Friends">Friends</option>
+                    <option value="family">Family</option>
+                    <option value="Social-media">Social media</option>
+                    <option value="others"">Others</option>
+                  </select>
+                </div>
+                
+              <button class="btn btn-cta">Sign Up </button>
+            </form>
+          </div>
+          <div class="cta-image-box" role="img" aria-label="Women enjoying food "></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+
+<footer class="footer">
+  <div class="container grid grid--5-cols">
+    <div class="logo-col">
+      <a href="#" class="footer-logo">
+        <img src="img/omnifood-logo.png" alt="Omnifood" class="logo" />
+      </a>
+      <!-- Social links  -->
+      <ul class="social-links footer-navigation">
+        <li><a href="#">📲instagram</a></li>
+        <li><a href="#"> 📲facebook</a></li>
+        <li><a href="#"> 📲 Twitter</a></li>
+      </ul>
+
+      <p class="coppyright">Copyright &copy; 2027 by Omnifood Inc. All rights reserved legally</p>
+    </div>
+
+      <!-- Adress coloumn -->
+    <div class="address-col">
+      <p class="footer-heading ">Contact us</p>
+      <address class="contact">
+        <p class="adress"> 623 Harrison St, 2nd Floor, San Francisco, CA 94107 </p>
+        <p>
+          <a href="tel:415-201-6370" class = "footer-link">415-201-6370</a><br />
+          <a href="mailto:hello@omnifood.com" class="footer-link">hello@omnifood.com</a>
+        </p>
+      </address>
+    </div>
+    
+    <!-- 1st coloumn  -->
+    <div class="nav-col">
+      <p class="footer-heading">Account</p>
+      <ul class="footer-navigation">
+        <li><a href="#"  class="footer-link">Create Account</a></li>
+        <li><a href="#"  class="footer-link">Sign in</a></li>
+        <li><a href="#"  class="footer-link">iOS app</a></li>
+        <li><a href="#"  class="footer-link">Android App</a></li>
+      </ul> 
+    </div>
+
+    <!-- 2st coloumn  -->
+    <div class="nav-col">
+      <p class="footer-heading">Company</p>
+      <ul class="footer-navigation">
+        <li><a href="#" class="footer-link">About Omnifood</a></li>
+        <li><a href="#" class="footer-link">For Business</a></li>
+        <li><a href="#" class="footer-link">Cooking partners</a></li>
+        <li><a href="#" class="footer-link">Careers</a></li>
+      </ul>
+    </div>
+    
+    <!-- 3st coloumn  -->
+    <div class="nav-col">
+      <p class="footer-heading">Resources</p>
+      <ul class="footer-navigation">
+        <li><a href="#" class="footer-link">Recipe directory</a></li>
+        <li><a href="#" class="footer-link">Help center</a></li>
+        <li><a href="#" class="footer-link">Privacy & terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>
 </html>
